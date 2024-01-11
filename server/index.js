@@ -13,8 +13,9 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://frontend-dev-task-two.vercel.app",
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    origin: ["https://frontend-dev-task-two.vercel.app"],
+    methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
+    credentials: true,
   })
 );
 mongoose
