@@ -1,10 +1,7 @@
 import "./App.css";
 import Common from "./Common";
-import axios from "axios";
 
 function App() {
-  
-  axios.defaults.withCredentials = true;
   return (
     <div className="flex justify-start items-center w-full space-x-5 overflow-x-scroll overflow-y-hidden p-5">
       <Common text={"Incomplete"} color={"red"} />
