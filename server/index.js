@@ -11,7 +11,7 @@ const port = 8000;
 app.use(cors({
   origin: 'https://frontend-dev-task-two.vercel.app/',
   optionsSuccessStatus: 200,
-  methods: "GET, PUT"
+  methods: "GET, POST"
 }));
 mongoose
   .connect(
