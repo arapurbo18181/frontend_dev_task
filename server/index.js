@@ -11,11 +11,13 @@ const port = 8000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(cors({
-  origin: 'https://frontend-dev-task-two.vercel.app/',
-  optionsSuccessStatus: 200,
-  methods: "GET, POST"
-}));
+app.use(
+  cors({
+    origin: "*",
+    optionsSuccessStatus: 200,
+    methods: "GET, POST",
+  })
+);
 mongoose
   .connect(
     "mongodb+srv://task:admin1234@cluster0.wqwbcyk.mongodb.net/attachments?retryWrites=true&w=majority"
