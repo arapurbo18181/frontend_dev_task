@@ -8,7 +8,11 @@ const cors = require("cors");
 const app = express();
 const port = 8000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://frontend-dev-task-two.vercel.app/',
+  optionsSuccessStatus: 200,
+  methods: "GET, PUT"
+}));
 mongoose
   .connect(
     "mongodb+srv://task:admin1234@cluster0.wqwbcyk.mongodb.net/attachments?retryWrites=true&w=majority"
