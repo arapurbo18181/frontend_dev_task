@@ -13,9 +13,8 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["https://frontend-dev-task-two.vercel.app"],
-    methods: ["GET,HEAD,PUT,PATCH,POST,DELETE"],
-    credentials: true,
+    origin: "https://frontend-dev-task-two.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     optionSuccessStatus: 200
   })
 );
