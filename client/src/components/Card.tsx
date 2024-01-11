@@ -28,8 +28,6 @@ const Card = ({ text, userId, clientName, name, chat }: DummyTypes) => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
-  
-  axios.defaults.withCredentials = true;
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
