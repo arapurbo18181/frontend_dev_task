@@ -82,7 +82,7 @@ app.get(`/count/:id/:text`, async (req, res) => {
     userId: req.params.id,
     text: req.params.text,
   });
-  res.json({ 1 });
+  res.json({ count });
 });
 
 app.listen(port, () => {
