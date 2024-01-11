@@ -8,6 +8,9 @@ const cors = require("cors");
 const app = express();
 const port = 8000;
 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
 app.use(cors({
   origin: 'https://frontend-dev-task-two.vercel.app/',
   optionsSuccessStatus: 200,
