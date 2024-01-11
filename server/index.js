@@ -13,9 +13,8 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "*",
-    optionsSuccessStatus: 200,
-    methods: "GET, POST",
+    origin: "https://frontend-dev-task-two.vercel.app",
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   })
 );
 mongoose
