@@ -15,7 +15,6 @@ app.use(
   cors({
     origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-    optionSuccessStatus: 200
   })
 );
 mongoose
