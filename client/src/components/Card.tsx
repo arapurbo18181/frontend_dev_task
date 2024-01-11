@@ -54,7 +54,7 @@ const Card = ({ text, userId, clientName, name, chat }: DummyTypes) => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/upload",
+        "https://frontend-api-eight.vercel.app/upload",
         formData
       );
       console.log(response);
@@ -73,7 +73,7 @@ const Card = ({ text, userId, clientName, name, chat }: DummyTypes) => {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        `http://localhost:8000/count/${Number(userId)}/${text}`
+        `https://frontend-api-eight.vercel.app/count/${Number(userId)}/${text}`
       );
       setCount(response.data.count);
     };
